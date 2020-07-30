@@ -50,28 +50,25 @@ link 标签会生成一个链接，它可能生成超链接，也可能生成外
 @import 用于引入一个 CSS 文件，除了 @charset 规则不会被引入，@import 可以引入另一个文件的全部内容。
 
 >```@import "mystyle.css";
-	@import url("mystyle.css");
-```	
+	@import url("mystyle.css");```
+
 ### @media 
 media 就是大名鼎鼎的 media query 使用的规则了，它能够对设备的类型进行一些判断。在 media 的区块内，是普通规则列表。
 
 >```
 @media print {
     body { font-size: 10pt }
-}
-```
+} ```
 
 ### @fontface 
 fontface 用于定义一种字体，icon font 技术就是利用这个特性来实现的。
 
->```
+> ```
 @font-face {  
   font-family: Gentium;   
   src: url(http://example.com/fonts/Gentium.woff);}  
-  p { font-family: Gentium, serif; }  
-`
-
- ### @page  
+  p { font-family: Gentium, serif; }```
+### @page  
 
 page 用于分页媒体访问网页时的表现设置，页面是一种特殊的盒模型结构，除了页面本身，还可以设置它周围的盒。
 >```
@@ -84,8 +81,7 @@ page 用于分页媒体访问网页时的表现设置，页面是一种特殊的
   @top-right {
     content: "Page " counter(page);
   }
-}
-``
+}```
 
 ### @namespace ：
 
@@ -128,8 +124,7 @@ CSS 支持一批特定的计算型函数：
 
 **toggle()** 函数在规则选中多于一个元素时生效，它会在几个值之间来回切换，比如我们要让一个列表项的样式圆点和方点间隔出现，可以使用下面代码：
 >```
-ul { list-style-type: toggle(circle, square); }
-``
+ul { list-style-type: toggle(circle, square); } ```
 
 **attr()** 函数允许 CSS 接受属性值的控制。
 
