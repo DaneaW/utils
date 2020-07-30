@@ -61,7 +61,7 @@ media 就是大名鼎鼎的 media query 使用的规则了，它能够对设备�
 @media print {
     body { font-size: 10pt }
 } 
-
+```
 ### @fontface 
 fontface 用于定义一种字体，icon font 技术就是利用这个特性来实现的。
 
